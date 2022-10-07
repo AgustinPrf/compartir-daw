@@ -1,0 +1,76 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+/** Ejemplo con position relative **/
+h1 {
+  left: 50px;
+  position: relative;
+  top: 10px;
+  width: 80%;
+}
+
+/** Elementos con position absolute y z-index **/
+.padre {
+  background-color: lightblue;
+  height: 200px;
+  margin: 20px auto;
+  position: relative;
+  width: 60%;
+}
+
+.padre div {
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+
+.padre div.hijo1 {
+  background-color: red;
+  left: 100px;
+  top: 50px;
+  z-index: 2;
+}
+
+.padre div.hijo2 {
+  background-color: chartreuse;
+  left: 120px;
+  top: 30px;
+}
+
+/** Elemento fixed **/
+.footer {
+  background-color: lightgrey;
+  bottom: 0px;
+  position: fixed;
+  width: 100%;
+}
+
+.footer div,
+.sticky-menu div {
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+  width: 100px;
+}
+
+/* Sticky Menu */
+.sticky-menu {
+  background-color: lightgrey;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+
+/* Elemento large  para forzar scroll */
+.large {
+  background-color: burlywood;
+  height: 1000px;
+  margin: 20px auto;
+  width: 60%;
+}
