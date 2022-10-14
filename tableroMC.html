@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tablero = []
+        function generartablero(){
+            for(let i=0; i<10; i++){
+                tablero[i] = new Array(10);
+                for(var j = 0; j<10; j++){
+                    tablero[i][j]=0;
+                }
+            }
+        }
+        
+        let numeroAletorio = () => {return parseInt(10*Math.random(0,10) + 1)}
+
+
+        function colocarbombas(){
+            let cont = 0
+            let i = 0
+            let j =0
+            while(cont <= 50){
+                i = numeroAletorio()
+                j = numeroAletorio()
+                if(tablero[i][j] == 0){
+                    tablero[i][j] = 1;
+                    cont++;
+                }
+            }
+        }
+        generartablero()
+        colocarbombas()
+        document.write(tablero);
+    </script>
+</body>
+</html>
