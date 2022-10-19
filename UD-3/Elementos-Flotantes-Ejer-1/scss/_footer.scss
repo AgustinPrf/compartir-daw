@@ -1,0 +1,16 @@
+// Definición de Variables
+$miColor : red;
+
+// Definicion de mixins
+@mixin miPadding($valorPadding) {
+  padding: $valorPadding;
+  text-align: center;
+}
+  
+
+// Definición de reglas
+footer {
+  background-color: $miColor;
+  clear: both;    
+  @include miPadding(20px);
+}

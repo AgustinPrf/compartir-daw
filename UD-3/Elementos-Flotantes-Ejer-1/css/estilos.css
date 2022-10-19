@@ -3,11 +3,6 @@
   box-sizing: border-box;
 }
 
-.container {
-  margin: 20px auto;
-  width: 80%;
-}
-
 h1 {
   text-align: center;
 }
@@ -16,7 +11,6 @@ nav {
   background-color: black;
   color: white;
 }
-
 nav div {
   display: inline-block;
   padding: 10px;
@@ -31,9 +25,13 @@ nav div {
   margin-top: 30px;
   width: 15%;
 }
-
 .sidebar div {
   padding: 10px;
+}
+
+.container {
+  margin: 20px auto;
+  width: 80%;
 }
 
 section.courses {
@@ -66,8 +64,10 @@ section.courses {
 }
 
 footer {
-  background-color: lightgrey;
+  background-color: red;
   clear: both;
   padding: 20px;
   text-align: center;
 }
+
+/*# sourceMappingURL=estilos.css.map */
