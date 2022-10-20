@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="idTablero" > </div>
     <script>
         let tablero = []
         function generartablero(){
@@ -34,9 +35,26 @@
                 }
             }
         }
-        generartablero()
-        colocarbombas()
-        document.write(tablero);
+       // generartablero()
+       // colocarbombas()
+        //document.write(tablero);
+
+       function dibujarTablero(){
+        let tabla = document.createElement("table");
+        let tablero = document.getElementById("idTablero");
+
+        tablero.appendChild(tabla)
+
+        // Dibujamos las filas
+        for(let i = 0 ; i <= 10 ; i++){
+            let fila = document.createElement("tr");
+            tabla.appendChild(fila)
+
+        }
+
+       } 
+
+       dibujarTablero()
     </script>
 </body>
 </html>
