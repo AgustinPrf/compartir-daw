@@ -1,7 +1,27 @@
-// utilizar una variable
+//UTILIZAR LISTAS
+$colores : (red,blue,green);
+
 h1 {
-	color: green;
+	color: nth($colores ,1 );
 }
 p {
-	color: green;
+	color: nth($colores ,2 );
+}
+
+// UTILIZAR MAPAS
+$mapaColores:('rojo':red , 'azul':blue , 'verde':green);
+
+h1 {
+	color: map-get($mapaColores ,'rojo');
+}
+
+p {
+	color: map-get($mapaColores,'azul' );
+}
+
+// UTILIZAR INTERPOLACIÓN
+
+$tipo: 'error';
+.btn-#{$tipo} {
+	color: red;
 }
