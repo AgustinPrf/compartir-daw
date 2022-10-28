@@ -7,12 +7,18 @@
   <style type="text/css">
 	.rojo {
 		color:red;
+		visibility: hidden;
 	}
 	.azul {
 		color:blue;
+		visibility: visible;
 	}
 	.verde {
 		color:green;
+		visibility: visible;
+	}
+	.nader {
+		font-size: 2em;
 	}
   </style>
 </head>
@@ -58,21 +64,27 @@ const enviar = function(){
 		if(e.value!=''){	
 				
 			if(divs[i].getElementsByTagName("p").length===0 ){ 
-												// No exista una respuesta previa, CREAR un P
+							
 				let elemento = document.createElement('p');
-				elemento.innerHTML=e.value
-
+				elemento.innerHTML=e.value			
+				
 				divs[i].appendChild(elemento)
+				
+				elemento.className='azul'	
+				elemento.previousElementSibling.className='verde'
+								
 
 			}else{			
-												// Exista una respuesta previa, habrá un P, EDITAR el p
+							
 				divs[i].getElementsByTagName('p')[0].innerHTML = e.value;
 			}			
 			
 		}else{
 			
-			divs[i].getElementsByTagName("p").length!=0 ? divs[i].getElementsByTagName('p')[0].remove() : console.log("no hay parrafo")		
-			
+			if(divs[i].getElementsByTagName("p").length!=0) {				
+				divs[i].getElementsByTagName('p')[0].previousElementSibling.className='rojo'
+				divs[i].getElementsByTagName('p')[0].remove()
+			}
 		}
 		
 	});		
