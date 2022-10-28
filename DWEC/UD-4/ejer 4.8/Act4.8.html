@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividad 4.3</title>
+  <style type="text/css">
+	.rojo {
+		color:red;
+	}
+	.azul {
+		color:blue;
+	}
+	.verde {
+		color:green;
+	}
+  </style>
+</head>
+<body>
+
+  <form id="id_form">    
+	<label>¿Mi deporte favorito?
+		<input type="text" name="numero" id="id_deporte" autofocus>
+	</label>
+	<br><br>
+	<label>¿Mi serie favorita?
+		<input type="text" name="numero" id="serie" >
+	</label>
+	<br><br>
+	<label>¿Mi película favorita?
+		<input type="text" name="numero" id="id_pelicula">
+	</label>
+	<br><br>
+	<input type="button" value="Aceptar aficiones" onclick="enviar()"> 
+  </form>
+  <h1>MIS AFICIONES</h1>
+  <div id="id_lista">
+	<div class="respuesta">
+		<h2 class="rojo" >¿Mi deporte favorito?</h2>	
+	</div>
+	<div class="respuesta">
+		<h2 class="rojo" >¿Mi serie favorita?</h2>
+	</div>
+	<div class="respuesta">
+		<h2 class="rojo" >¿Mi película favorita?</h2>
+	</div>
+  </div>
+ 
+</body>
+<script>
+
+const enviar = function(){
+	let inputs = document.querySelectorAll('input[type=text]');
+	let divs = document.querySelectorAll('.respuesta');
+
+	inputs.forEach((e,i) => {
+		
+		if(e.value!=''){	
+				
+			if(divs[i].getElementsByTagName("p").length===0 ){ 
+												// No exista una respuesta previa, CREAR un P
+				let elemento = document.createElement('p');
+				elemento.innerHTML=e.value
+
+				divs[i].appendChild(elemento)
+
+			}else{			
+												// Exista una respuesta previa, habrá un P, EDITAR el p
+				divs[i].getElementsByTagName('p')[0].innerHTML = e.value;
+			}			
+			
+		}else{
+			
+			divs[i].getElementsByTagName("p").length!=0 ? divs[i].getElementsByTagName('p')[0].remove() : console.log("no hay parrafo")		
+			
+		}
+		
+	});		
+}
+</script> 
+</html>
