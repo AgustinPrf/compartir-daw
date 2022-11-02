@@ -1,0 +1,51 @@
+// Paletas de colores básica
+//Colores generales, ¿Puedes utilizar otro tipo de dato? ¿array? ¿map?
+$color-background: #.....;
+$color-base: #xxxxx;
+
+
+//VAIABLES con los colores de la barra de menú
+$navbar-background-color: rgb(x, y, z);
+$navbar-color-hover: $color-background;
+
+//VARIABLE para el color del borde 
+$border-color: $color-base;
+
+/* VARIABLE para el contenedor general de mi página*/
+$main-container-width: xx%;
+
+//VARIABLES para los bordes
+$border-width: ".....";
+$border-style: ".....";
+
+$border-radius-small: .....;
+$border-radius: .....;
+$boder-radius-big: .....;
+
+// VARIABLES para las imagenes
+$figure-width: xx%;
+
+.container {
+ 
+}
+
+/*Usando anidamiento crear la hoja de estilos para un menú */
+nav {
+   
+    /* Zona de estilos del nav*/
+
+    ul {
+        
+        /* Zona de estilos de la lista dentro del nav*/
+        
+    }
+}
+
+/*Estructura de anidamiento para la figura (cards)*/
+
+
+figure.card {
+
+    /* Zona de estilos para las etiquetas img y figcaption*/
+        
+}
