@@ -1,11 +1,11 @@
 // Paletas de colores básica
 //Colores generales, ¿Puedes utilizar otro tipo de dato? ¿array? ¿map?
-$color-background: #.....;
-$color-base: #xxxxx;
+$color-background: #FFFFFF;
+$color-base: #333333;
 
 
 //VAIABLES con los colores de la barra de menú
-$navbar-background-color: rgb(x, y, z);
+$navbar-background-color: rgb(155, 111, 145);
 $navbar-color-hover: $color-background;
 
 //VARIABLE para el color del borde 
@@ -16,12 +16,12 @@ $main-container-width: xx%;
 
 //VARIABLES para los bordes
 $border-width: ".....";
-$border-style: ".....";
+$border-style: "solid";
 
 $border-radius-small: .....;
 $border-radius: .....;
 $boder-radius-big: .....;
-
+ 
 // VARIABLES para las imagenes
 $figure-width: xx%;
 
@@ -49,3 +49,5 @@ figure.card {
     /* Zona de estilos para las etiquetas img y figcaption*/
         
 }
+
+

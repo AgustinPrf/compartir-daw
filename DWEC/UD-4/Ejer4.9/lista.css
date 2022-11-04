@@ -1,0 +1,24 @@
+
+ul {
+  list-style-type: decimal; 
+}
+
+ul#lista li {
+  color: #333;
+  #display: block;
+  padding: .2em 0 .2em .5em;
+  text-decoration: none;
+  text-align: left;             
+}
+
+h1 {
+  color: #6c2eb9;
+  font-weight: normal;
+  font-size: 40px;
+  font-family: Arial;
+  text-transform: uppercase;
+}  
+input {
+    border-radius: 5px;
+    border: 1px solid #39c;
+} 
