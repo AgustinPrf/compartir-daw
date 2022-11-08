@@ -1,0 +1,128 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+}
+.btn:hover {
+  box-shadow: 0.2rem 0.2rem #888;
+}
+.btn:active {
+  background-color: orange;
+  color: white;
+}
+
+.btn-error {
+  background-color: #ff0000;
+}
+
+.btn-warning {
+  background-color: #eff178;
+}
+
+.btn-accepted {
+  background-color: #378a00;
+}
+
+.btn-normal {
+  background-color: #006eff;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+tbody tr td:nth-child(1) {
+  background-color: #888888;
+}
+
+tbody tr td:nth-child(2) {
+  background-color: #cccccc;
+}
+
+tbody tr td:nth-child(3) {
+  background-color: #888888;
+}
+
+tbody tr td:nth-child(4) {
+  background-color: #cccccc;
+}
+
+tbody tr td:nth-child(5) {
+  background-color: #888888;
+}
+
+tbody tr td:nth-child(6) {
+  background-color: #cccccc;
+}
+
+tbody tr td:nth-child(7) {
+  background-color: #888888;
+}
+
+tbody tr td:nth-child(8) {
+  background-color: #cccccc;
+}
+
+tbody tr td:nth-child(9) {
+  background-color: #888888;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row > * {
+  border: 1px solid black;
+  height: 150px;
+}
+
+.row > .col-1 {
+  padding: 1rem;
+  width: 12.5%;
+}
+
+.row > .col-2 {
+  padding: 1rem;
+  width: 25%;
+}
+
+.row > .col-3 {
+  padding: 1rem;
+  width: 37.5%;
+}
+
+.row > .col-4 {
+  padding: 1rem;
+  width: 50%;
+}
+
+.row > .col-5 {
+  padding: 1rem;
+  width: 62.5%;
+}
+
+.row > .col-6 {
+  padding: 1rem;
+  width: 75%;
+}
+
+.row > .col-7 {
+  padding: 1rem;
+  width: 87.5%;
+}
+
+.row > .col-8 {
+  padding: 1rem;
+  width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */
