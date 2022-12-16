@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios en JavaScript</title>
+  <script type="text/javascript" src="./formularios.js" defer></script>
+    
+</head>
+<body> 
+  <h1>Formularios </h1>
+
+  <form id="idFormulario">
+      
+    <label for="idNombre">Nombre</label>
+    <input type="text" id="idNombre" name="Nombre" required minlength="4" maxlength="8" size="10">
+ 
+    <br>
+    <br>
+
+      <!-- ÁREA de RadioButton  : si , no , nsnc -->          
+      <label for="idRadioSi">Si</label>      
+      <input type="radio" id="idRadioSi" name="radios" value="Si" checked>
+      <label for="idRadioNo">No</label>
+      <input type="radio" id="idRadioNo" name="radios" value="No">
+ 
+      <br>
+      <br>
+      <label for="idCondiciones">¿Aceptas las condiciones de uso?</label>
+      <input type="checkbox" id="idCondiciones" name="condiciones" checked>
+      
+      <br>
+      <br>
+
+      <label for="idComunidad">Comunidad Autonoma</label>
+      <select name="pais" id="idComunidad">
+        <option value="">--selecciona un valor--</option>
+        <option value="andalucia">Andalucia</option>
+        <option value="madrid">Madrid</option>
+        
+    </select>
+
+    <br>
+    <br>
+    <label for="idInputPais">Paises</label>
+    <input list="idListaPais" id="idInputPais" name="paises">
+
+    <datalist id="idListaPais">
+        <option value="Chocolate">
+        <option value="Coconut">
+        <option value="Mint">
+        <option value="Strawberry">
+        <option value="Vanilla">
+    </datalist>
+    
+
+    </div>
+
+    
+    <br>
+    <br>
+
+    <!-- ÁREA de checkbox  : condiciones y privacidad -->   
+    
+    
+    <br>
+    <br>
+
+    <!-- ÁREA de Select  : primer, segundo, tercer, cuarto -->   
+   
+
+    <br>
+    <br>
+    
+    <!-- ÁREA de input list + DataList : primer, segundo, tercer, cuarto --> 
+    
+
+    <br>
+    <br>
+
+    <input id="idEnviar" type="button" value="Enviar"/>
+         
+  </form>
+</body>
+</html>
