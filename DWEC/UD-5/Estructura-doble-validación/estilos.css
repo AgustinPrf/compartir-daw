@@ -1,0 +1,39 @@
+.errorSpam {    
+    display: block;    
+    color: red;
+    font-style: italic;
+}
+.error {
+    border: solid 3px #FF0000;
+}
+fieldset {
+    background: #e0ffff;
+    width: 600px;
+    border-radius: 5px;    
+    font-size: 18px;
+}
+legend {
+    text-align: center;
+    font-size: 20px;
+}
+
+label {
+    width: 150px;
+    float: left;
+    margin-bottom: 5px;
+    color: #51515B;
+    font-size: 20px;
+}
+input,
+select {
+    display: block;
+    width: 150px;
+    float: left;
+    margin-bottom: 15px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: #656574;
+
+}

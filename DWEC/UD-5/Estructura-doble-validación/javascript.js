@@ -5,7 +5,7 @@ document.getElementById("idEnviar").addEventListener('click', validar, false);
 let formulario=document.forms["idFormulario"]
 
 /****************************************************************
- * FUNCIÓN GENERAL DE VALIDACIÓN
+ * FUNCIÓN GENERAL DE VALIDACI�N
  * Unificar los dos tipos de validación
  *          - Mediante JS
  *          - Mediante Api de acceso a validación de html
@@ -50,7 +50,7 @@ function validarNombre() {
     if (inputNombre.value == ""){        
         formulario.elements["idNombre"].className = "error";
         formulario.elements["idNombre"].focus();
-        document.getElementById('idNombreError').innerHTML="El campo: " + formulario.elements["idNombre"].name + " no puede estar en blanco"
+        document.getElementById('idNombreError').innerHTML="El campo: " + formulario.elements["idNombre"].name + ", es requerido"
         
         return false
     }
